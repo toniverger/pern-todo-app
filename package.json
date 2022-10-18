@@ -1,7 +1,7 @@
 {
   "name": "ToDo App",
   "version": "1.0.0",
-  "description": "A simple ToDo app using PERN stack",
+  "description": "A simple ToDo app using PERN Stack",
   "main": "index.js",
   "engines": {
     "node": "16.17.0",
