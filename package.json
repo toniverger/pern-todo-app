@@ -1,0 +1,29 @@
+{
+  "name": "ToDo App",
+  "version": "1.0.0",
+  "description": "A simple ToDo app using PERN stack",
+  "main": "index.js",
+  "engines": {
+    "node": "16.17.0",
+    "npm": "8.15.0" 
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["PERN", "ToDo", "App", "React", "NodeJs" ],
+  "author": "@toniverger",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
