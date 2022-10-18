@@ -4,24 +4,17 @@ import { useNavigate } from "react-router-dom";
 
 export default function TaskList() {
   const [tasks, setTasks] = useState([]);
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const fetchData = async () => {
-    setLoading(true);
     const response = await fetch("/tasks");
     const data = await response.json();
-    setLoading(false);
     setTasks(data);
   };
 
   useEffect(() => {
     fetchData();
   }, []);
-
-  const handleEdit = () => {
-    console.log("Editing...");
-  };
 
   const handleDelete = async (id) => {
     try {
